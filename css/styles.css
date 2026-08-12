@@ -6,8 +6,21 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background-color: white;
+  background-color: #e8ccc5a6;
 }
+header{
+  background-color: #aebdd489;
+  
+  }
+  #logos{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;}
+
+    #nota img{
+      width: 191px;
+    }
 
 nav {
   display: flex;
@@ -17,7 +30,7 @@ nav {
   padding: 0.5rem;
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
-  background-color: #eee;
+  background-color:#e8eccc8b;
 }
 
 nav a {
@@ -44,3 +57,25 @@ h1 {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
+h2{
+  font-size: 1.5rem;
+}
+
+h3{
+  font-size: 1rem;
+}
+p{
+  font-size: 1rem;
+}
+footer {
+  width: 100%;
+  color: #807E79;
+}
+
+  #alumno{
+  
+  background-color: #CFD4AE;
+  color: #807E79;
+  padding: 5px;
+  } 
