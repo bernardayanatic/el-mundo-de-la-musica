@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Other page</title>
+    <title>Estilos musicales</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -21,9 +21,10 @@
     </header>
 
     <nav>
-      <a href="index.html" aria-current="page">El mundo de la musica</a>
-      <a href="/estilosmusicales.html">Estilos musicales</a>
+      <a href="index.html" >El mundo de la musica</a>
+      <a href="/estilosmusicales.html"aria-current="page">Estilos musicales</a>
       <a href="/lamusicaylasemociones.html">La musica y las emociones</a>
+      
       <a href="/artistasgenerosycanciones.html"> Artistas,géneros y canciones</a>
       <a href="/eventosmusicales.html"> Eventos musicales</a>
     
@@ -31,7 +32,21 @@
 
     </nav>
     <main>
+      
+
       <h1>Estilos musicales</h1>
+  
+  
+  
+      <div class="video-container">
+        
+      
+        <video controls style="width: 750px;"> 
+          <source src="videos/videoestilomusicales.mp4" type="video/mp4">
+        </video>
+      </div>
+  
+
       
       
       <h2> Pop</h2>
@@ -45,6 +60,10 @@
    los artistas pueden utilizar programas y efectos digitales para crear sonidos nuevos.
     Actualmente, el pop tiene una gran presencia en plataformas digitales, redes sociales, radios y conciertos. 
     Artistas como Taylor Swift, Ariana Grande, Bruno Mars y Dua Lipa son algunos de los representantes conocidos del género.</p>
+   
+    
+
+  
 
 <h2>Rock</h2>
 
@@ -90,11 +109,157 @@ estilos del Caribe y América Latina. Sus raíces están relacionadas con el reg
   más reconocidos son Johann Sebastian Bach, Wolfgang Amadeus Mozart, Ludwig van Beethoven y Antonio Vivaldi.
    La música clásica tuvo una enorme influencia en la historia musical y muchas de sus técnicas continúan presentes 
    en otros géneros. Además, sus obras se interpretan en teatros, auditorios, conciertos y orquestas de todo el mundo.</p>
+   <h2>Encuesta de estilos musicales</h2>
+   
+   <p>Ingrese sus datos y eliga un estilo</p>
+   <section id="form">
+     <div id="formulario">
+       <h2>Tus datos</h2>
+       <form action="#">
+         <label for="formnombre">Nombre</label>
+         <input
+           type="text"
+           name="formnombre"
+           id="formnombre"
+           maxlength="30"
+           minlength="3"
+           required
+           placeholder="ingrese su nombre"
+         />
+         <input
+           id="formclave"
+           required
+           type="password"
+           placeholder="Ingrese la contraseña"
+         />
+         <label for="formapellido">Apellido</label>
+         <input
+           type="text"
+           name="formapellido"
+           id="formapellido"
+           maxlength="30"
+           minlength="3"
+           required
+           placeholder="ingrese su nombre"
+         />
+         <input
+           id="formedad"
+           required
+           type="number"
+           placeholder="Ingrese su edad"
+         />
+
+         <input type="radio" id="formf" name="formsexo" value="femenino" />
+         <label for="fem">Femenino</label><br />
+         <input type="radio" id="formm" name="formsexo" value="masculino" />
+         <label for="mas">Masculino</label><br />
+         <input type="radio" id="formn" name="formsexo" value="nodecirlo" />
+         <label for="no">No decirlo</label><br /><br />
+
+         <label for="">¿Cuál es su estilo musical preferido?</label><br />
+         <select name="estilos" id="formestilos">
+           <option value="pop">Pop</option>
+           <option value="reggaeton">Reggaetón</option>
+           <option value="electronica">Electronica</option>
+           <option value="musicaclasica">Música Clasica</option>
+           <option value="rock">Rock</option>
+         </select>
+           <!-- ¿Con qué frecuencia escuchás música? -->
+           <fieldset>
+             <legend>¿Con qué frecuencia escuchás música?</legend>
+             <input type="radio" id="formfrecdiario" name="formfrecuencia" value="todoslosdias" />
+             <label for="formfrecdiario">Todos los días</label><br />
+             <input type="radio" id="formfrecvarias" name="formfrecuencia" value="variasvecesporsemana" />
+             <label for="formfrecvarias">Varias veces por semana</label><br />
+             <input type="radio" id="formfrecalgunas" name="formfrecuencia" value="algunasvecesporsemana" />
+             <label for="formfrecalgunas">Algunas veces por semana</label><br />
+             <input type="radio" id="formfrecnunca" name="formfrecuencia" value="casinunca" />
+             <label for="formfrecnunca">Casi nunca</label><br />
+           </fieldset>
+           <br />
+
+           <!-- Artista o banda favorita -->
+           <label for="formartista">¿Cuál es tu artista o banda favorita?</label><br />
+           <input
+             type="text"
+             name="formartista"
+             id="formartista"
+             placeholder="Ingrese su artista o banda favorita"
+           /><br /><br />
+
+           <!-- Canción favorita -->
+           <label for="formcancion">¿Cuál es tu canción favorita?</label><br />
+           <input
+             type="text"
+             name="formcancion"
+             id="formcancion"
+             placeholder="Ingrese su canción favorita"
+           /><br /><br />
+
+           <!-- ¿Cuándo escuchás música normalmente? -->
+           <fieldset>
+             <legend>¿Cuándo escuchás música normalmente?</legend>
+             <input type="checkbox" id="formcuandoestudio" name="formcuando" value="mientrasestudio" />
+             <label for="formcuandoestudio">Mientras estudio</label><br />
+             <input type="checkbox" id="formcuandoviajo" name="formcuando" value="mientrasviajo" />
+             <label for="formcuandoviajo">Mientras viajo</label><br />
+             <input type="checkbox" id="formcuandoamigos" name="formcuando" value="conamigos" />
+             <label for="formcuandoamigos">Cuando estoy con amigos</label><br />
+             <input type="checkbox" id="formcuandodormir" name="formcuando" value="antesdedormir" />
+             <label for="formcuandodormir">Antes de dormir</label><br />
+             <input type="checkbox" id="formcuandoejercicio" name="formcuando" value="haciendoejercicio" />
+             <label for="formcuandoejercicio">Cuando hago ejercicio</label><br />
+             <input type="checkbox" id="formcuandocualquiera" name="formcuando" value="cualquiermomento" />
+             <label for="formcuandocualquiera">En cualquier momento</label><br />
+           </fieldset>
+           <br />
+
+           <!-- ¿Qué importancia tiene la música en tu vida? -->
+           <fieldset>
+             <legend>¿Qué importancia tiene la música en tu vida?</legend>
+             <input type="radio" id="formimpmuy" name="formimportancia" value="muyimportante" />
+             <label for="formimpmuy">Muy importante</label><br />
+             <input type="radio" id="formimpimportante" name="formimportancia" value="importante" />
+             <label for="formimpimportante">Importante</label><br />
+             <input type="radio" id="formimppoco" name="formimportancia" value="pocoimportante" />
+             <label for="formimppoco">Poco importante</label><br />
+             <input type="radio" id="formimpno" name="formimportancia" value="noesimportante" />
+             <label for="formimpno">No es importante</label><br />
+           </fieldset>
+           <br />
+
+           <!-- ¿Qué estilo musical te gustaría conocer más? -->
+           <label for="formestiloconocer">¿Qué estilo musical te gustaría conocer más?</label><br />
+           <select name="formestiloconocer" id="formestiloconocer">
+             <option value="pop">Pop</option>
+             <option value="reggaeton">Reggaetón</option>
+             <option value="electronica">Electronica</option>
+             <option value="musicaclasica">Música Clasica</option>
+             <option value="rock">Rock</option>
+             <option value="jazz">Jazz</option>
+             <option value="folclore">Folclore</option>
+             <option value="otros">Otros</option>
+           </select>
+           <br /><br />
+
+         <input
+           type="text"
+           name="formnombre"
+           id="formnombres"
+           maxlength="30"
+           minlength="3"
+           placeholder="Otro estilo"
+         />
+
+         <input type="submit" />
+       </form>
+     </div>
+   </section>
     </main>
     <footer>
       <div id="colegio">
         <h3>Colegio:</h3>
-        <p><a href="https://www.stmary.edu.ar/es/?sede=sp" target="_blanck">Saint Mary of the hills</a></p>
+        <p><a href="https://www.stmary.edu.ar/es/?sede=sp" target="_blank">Saint Mary of the hills</a></p>
         <p>Dirección:Av. Parque, B1631 Zelaya, Provincia de Buenos Aires</p>
 
       </div>
