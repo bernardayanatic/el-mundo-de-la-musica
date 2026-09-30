@@ -22,7 +22,7 @@ header {
 }
 
 #nota img {
-  width: 191px;
+  width: 190px;
 }
 
 nav {
@@ -33,7 +33,7 @@ nav {
   padding: 0.5rem;
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
-  background-color: #e8eccc8b;
+  background-color: #cacab28b;
 }
 
 nav a {
@@ -49,7 +49,7 @@ nav a {
 
 nav a[aria-current='page'] {
   color: #000;
-  background-color: #d4d4d4;
+  background-color: #75846e1e;
 }
 
 main {
@@ -58,6 +58,7 @@ main {
 }
 
 h1 {
+  font-family: 'Century Gothic', 'Trebuchet MS', 'Segoe UI', sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
@@ -65,14 +66,17 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
+  font-family: 'Century Gothic', 'Trebuchet MS', 'Segoe UI', sans-serif;
 }
 
 h3 {
   font-size: 1rem;
+  font-family: 'Century Gothic', 'Trebuchet MS', 'Segoe UI', sans-serif;
 }
 
 p {
   font-size: 1rem;
+  font-family: 'Century Gothic', 'Trebuchet MS', 'Segoe UI', sans-serif;
 }
 
 /* comienzo de footer*/
