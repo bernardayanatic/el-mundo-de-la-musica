@@ -17,13 +17,35 @@ header {
 #logos {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
 }
 
 #nota img {
   width: 190px;
+  display: block;
 }
+
+.header-titulo {
+  margin-left: 350px;
+}
+
+.header-titulo h1 {
+  margin: 0;
+}
+
+
+
+.frase {
+
+  font-style: italic;
+  font-size: 26px;
+  color: rgb(202, 152, 152);
+  margin: 5px 0 0;
+
+}
+
 
 nav {
   display: flex;
@@ -90,6 +112,12 @@ footer {
   padding-left: 40px;
   padding-right: 40px;
   align-items: center;
+  clear: both;
+
+}
+
+footer a {
+  color: #6e7348;
 }
 
 
@@ -167,9 +195,9 @@ footer {
 }
 
 #formulario {
-  width: 650px;
+  width: 950px;
 
-  float: left;
+  margin: 0 auto;
   background-color: #E8CCC5;
   padding: 25px;
 }
@@ -272,32 +300,28 @@ footer {
 
 
 
-/* Reglas base mínimas, sin pisar tablas específicas */
+
 table {
   border-collapse: collapse;
 }
 
 /* Tabla de eventos */
 .fila-eventos {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end; /* esto solo alcanza para empujarla a la derecha */
-  gap: 40px;
+  margin-bottom: 20px;
 }
 
 .lista-eventos {
-  flex-shrink: 0;
-  width: 600px;
-  padding: 40px;
-  font-size:  18px;
+  margin: 0;
+  padding: 0 0 0 40px;
+  font-size: 18px;
   font-style: oblique;
-  
-  
+
+
 }
 
-#eventos{
-  flex: 0 1 900px;
-  float: right;
+#eventos {
+  width: 90%;
+  margin: 0 auto 25px;
 }
 
 #eventos table {
@@ -326,7 +350,7 @@ table {
 
 #eventos tr:hover {
   background-color: #d9e4e8;
-  
+
 }
 
 #eventos td img {
@@ -354,6 +378,15 @@ table {
   border-radius: 15%;
 }
 
+.img-flotante3 {
+  float: left;
+  width: 200px;
+  margin: 0 30px 20px 0;
+  border-radius: 15%;
+}
+
+
+
 .ir-arriba {
   font-size: 15px;
   color: #56818e;
@@ -362,11 +395,65 @@ table {
 p {
   line-height: 25px;
 }
-span{
-  color:rgb(199, 102, 167) ;
-}
-.repito{
-  font-size: 20px;
-color:rgb(202, 152, 152) 
 
+span {
+  color: rgb(199, 102, 167);
+}
+
+.repito {
+  font-size: 20px;
+  color: rgb(202, 152, 152)
+}
+
+.imgemociones {
+  width: 70%;
+  background-color: yellow;
+}
+
+.emocionesimg {
+  width: 700px;
+}
+
+#video {
+  margin: 0 auto;
+  background-color: rgba(213, 191, 103, 0.597);
+  width: 700px;
+  border: solid 3px rgb(201, 159, 195);
+  border-radius: 25px;
+  padding: 40px;
+
+}
+
+.imagen-1 {
+  float: right;
+  width: 25%;
+  margin: 0 0 15px 25px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.imagen-2 {
+  float: right;
+  width: 25%;
+  margin: 0 0 15px 25px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.podcast{
+  text-align: center;     
+  margin: 30px auto;   
+  float: left;
+}
+
+
+h3{
+  color: #333333;       
+  font-family: sans-serif; 
+  margin-bottom: 12px;    
+}
+
+audio {
+  width: 100%;            
+  max-width: 400px;
 }
